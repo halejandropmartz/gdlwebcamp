@@ -17,7 +17,7 @@
 				$error = $e->getMessage();
 			}
 		?>
-		<?php while($eventos = $resultado->fetch_all(MYSQLI_ASSOC)) { ?>
+		<?php while($eventos = $resultado->fetch_assoc()) { ?>
 			<?php foreach($eventos as $evento): ?>
 				<div class="dia">
 					<p class="titulo">
